@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Print</title>
+        <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <form id = 'pInfo'>
+        <table>
+            <tbody>
+              <tr>
+                <td><input type="text" id = "pName" placeholder="Name"/></td>
+                <td><input type="text" id = "pNumber" placeholder="Phone Number"/></td>
+                <td rowspan="2" style="vertical-align:middle;"><input type="submit" id = "submit" /></td>
+              </tr>
+              <tr>
+                <td colspan="2"><input style="width:97.7%" type="text" id = "pAddress" placeholder="Address"/></td>
+              </tr>
+            </tbody>
+          </table>
+    </form>
+    <div class = 'container'>
+      <ul id = 'resultsList'></ul>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

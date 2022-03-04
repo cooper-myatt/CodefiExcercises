@@ -1,0 +1,18 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  
+  #centeringDiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+  
+  #mainForm{
+    margin: auto;
+  }
+
+  /*need to add formating to remove bullet points from ul
+    for ul id = 'resultsList'*/
