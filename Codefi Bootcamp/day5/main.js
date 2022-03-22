@@ -30,9 +30,14 @@ function loadInfo(){
     //return info //Has to return whatever is in storage in correct format
 }
 
+//Remove li objects from screen
+function removeInfo(){
+    
+}
 //Function that runs all of the other helper functions
 function getInfo(e){
-    e.preventDefault()
+    e.preventDefault();
+    removeInfo();
     iName = nameInput.value;
     iNumber = numberInput.value;
     iAddress = addressInput.value;

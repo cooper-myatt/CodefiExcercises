@@ -1,4 +1,5 @@
-//Create a function that returns the number of true values in an array.
+//Create a function that returns the number of 
+//true values in an array.
 
 //Create an array
 

@@ -1,3 +1,6 @@
+//Create a new project (with only an HTML file) that uses 
+//JavaScript to change the color of a Heading element.
+
 const docHeader = document.body.querySelector('h1');
 docHeader.style.color = 'orange';
 

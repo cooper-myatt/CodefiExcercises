@@ -1,5 +1,7 @@
-//Variables
+//Create a button that changes the 
+//background and text color randomly when clicked
 
+//Variables
 cButton = document.querySelector(".colorButton");
 
 //Functions

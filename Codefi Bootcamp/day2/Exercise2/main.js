@@ -1,3 +1,7 @@
+//Dynamically display a list of food items 
+//and prices using HTML & JavaScript
+
+
 let foodList = [{food : 'Pizza', price : 4.00},
                 {food : 'Taco', price : 3.00},
                 {food : 'chicken strips', price : 3.50}];

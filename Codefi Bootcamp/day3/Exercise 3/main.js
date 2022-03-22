@@ -1,4 +1,7 @@
-//Create a function that takes an object and returns the keys and values as separate arrays. Return the keys sorted alphabetically and their corresponding values in the same order.
+//Create a function that takes an object and 
+//returns the keys and values as separate arrays. 
+//Return the keys sorted alphabetically and their 
+//corresponding values in the same order.
 
 let keys = []
 let values = []
@@ -17,6 +20,6 @@ function Comparator(a, b) {
   };
 
 keysAndValues({ a: 1, b: 2, c: 3 });
-/*keysAndValues({ a: "Apple", b: "Microsoft", c: "Google" })
+keysAndValues({ a: "Apple", b: "Microsoft", c: "Google" })
 keysAndValues({ key1: true, key2: false, key3: undefined })
-keysAndValues({ key4: true, apple: false, key3: undefined })*/
+keysAndValues({ key4: true, apple: false, key3: undefined })
