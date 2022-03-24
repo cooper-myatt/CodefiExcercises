@@ -20,17 +20,15 @@ The maximum time to complete the interview includes a buffer time of 20 minutes.
 function interview(arr, totalTime){
     const rubric = [5,5,10,10,15,15,20,20]; // Max times each question can take
 
-    if (arr.length <  8) {return "Disqualified"}; //Didn't answer all questions
-    if (totalTime > 120) {return "Disqualified"}; //Took too long to complete
-
-    arr.every((x, i) => {
-        if(arr[i]>rubric[i]){console.log("t"); return "Disqualified"}//Failed to answer every question in the alloted time
-    })
-    return "Qualified"; //Candidate passed all tests
+    if (arr.length <  8) {return "Disqualified - Did not answer all questions."}; //Didn't answer all questions
+    if (totalTime > 120) {return "Disqualified - Took to long to complete interview."}; //Took too long to complete
+    for( var i = 0; i<arr.length; i++){
+        if(arr[i] > rubric[i]){ return `Disqualified - Took to long on question ${i}.`}
+    }
+    return 'Qualified'
 }
-
-//console.log(interview([5, 5, 10, 10, 15, 15, 20, 20], 120));
-console.log(interview([5, 5, 10, 10, 25, 15, 20, 20], 120));
-
-//************************************************************************************************************************************************************ */
-// Currently have an error to fix. Will resolve it later!
+console.log(interview([2, 3, 8, 6, 5, 12, 10, 18], 64)) // Qualified
+console.log(interview([5, 5, 10, 10, 15, 15, 20, 20], 120)); //Qualified
+console.log(interview([5, 5, 10, 10, 25, 15, 20, 20], 120)); //Disqualified - Exceeds time limit for question
+console.log(interview([5, 5, 10, 10, 15, 15, 20], 120)) // Disqualified - Did not complete all questions
+console.log(interview([5, 5, 10, 10, 15, 15, 20, 20], 130)) // Disqualified - exceeded total Time
